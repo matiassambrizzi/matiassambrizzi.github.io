@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "//matiassambrizzi.github.io/static/js/main.f276e967.js",
-    "index.html": "//matiassambrizzi.github.io/index.html",
-    "main.f276e967.js.map": "//matiassambrizzi.github.io/static/js/main.f276e967.js.map"
+    "main.js": "/static/js/main.f276e967.js",
+    "index.html": "/index.html",
+    "main.f276e967.js.map": "/static/js/main.f276e967.js.map"
   },
   "entrypoints": [
     "static/js/main.f276e967.js"
