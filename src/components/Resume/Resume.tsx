@@ -94,13 +94,15 @@ export const ResumeLayout = (
       sx={props.sx}
     >
       <Grid2
-        xs={4}
+        xs={12}
+        md={4}
       >
         {props.leftContent}
       </Grid2>
 
       <Grid2
-        xs={8}
+        xs={12}
+        md={8}
       >
         {props.rightContent}
       </Grid2>
@@ -118,7 +120,7 @@ export const Resume = (
 
   return (
     <Grid2
-      width={"960px"}
+      maxWidth={"960px"}
       sx={{border: "2px solid #EFEFEF"}}
       container
     >
@@ -220,6 +222,7 @@ const ResumeHeader = (
       }
       rightContent={
         <Col
+          padding={"20px"}
         >
           <Typography
             fontWeight="bold"
