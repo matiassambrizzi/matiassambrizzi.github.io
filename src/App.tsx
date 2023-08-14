@@ -1,6 +1,6 @@
 import {Stack} from '@mui/system';
 import {Resume} from './components/Resume/Resume';
-import {matiDataGerman} from './data';
+import {matiDataSpanish} from './data';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       alignItems="center" 
       justifyContent={"center"}
     >
-      <Resume data={matiDataGerman} />
+      <Resume data={matiDataSpanish} />
     </Stack>
   );
 }
