@@ -5,16 +5,31 @@ import {Col} from "../layout/Flex"
 
 type List<T> = readonly T[]
 
-export type ResumeComponent =
+export type ResumeAST =
   ResumeText |
   ResumeItem |
   ResumeList
   
-type ResumeList = {type: "list", data: List<ResumeItem>}
-type ResumeText = {type: "text", data: string} 
-type ResumeItem = {type: "item", data: {title: string, subtilte: string, data: string}}
+type ResumeList = { 
+  type: "list", 
+  data: List<ResumeItem> 
+}
 
-export type ResumeData = {
+type ResumeText = { 
+  type: "text", 
+  data: string 
+} 
+
+type ResumeItem = { 
+  type: "item",
+  data: {
+    title: string, 
+    subtilte: string, 
+    data: string
+  } 
+}
+
+export type Resume = {
 
   header: {
     title: string,
@@ -26,12 +41,12 @@ export type ResumeData = {
 
     left: List<{
       title: string, 
-      component: ResumeComponent
+      component: ResumeAST
     }>,
 
     right: List<{
       title: string, 
-      component: ResumeComponent
+      component: ResumeAST
     }>
 
   }
@@ -39,7 +54,7 @@ export type ResumeData = {
 
 
 const ResumeComponentElement = (
-  props: ResumeComponent
+  props: ResumeAST
 ) => (
 
   props.type === "text" ?
@@ -69,7 +84,7 @@ const ResumeComponentElement = (
 const ResumeComponent = (
   props: {
     title: string,
-    component: ResumeComponent
+    component: ResumeAST
   }
 ) => 
   <ResumeText 
@@ -114,7 +129,7 @@ export const ResumeLayout = (
 
 export const Resume = (
   props: {
-    data: ResumeData
+    data: Resume
   }
 ) => {
 
@@ -141,7 +156,7 @@ export const Resume = (
 
 const ResumeBody = (
   props: {
-    data: ResumeData
+    data: Resume
   }
 ) => {
   return (
@@ -188,7 +203,7 @@ const ResumeBody = (
 
 const ResumeHeader = (
  props: {
-    data: ResumeData
+    data: Resume
   }
 ) => {
 

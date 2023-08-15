@@ -1,6 +1,6 @@
-import {ResumeData} from "./components/Resume/Resume";
+import {Resume} from "./components/Resume/Resume";
 
-export const matiDataGerman: ResumeData = {
+export const matiDataGerman: Resume = {
   header: {
     title: "MATIAS SAMBRIZZI",
     picture: "https://www.posadagotan.com/wp-content/uploads/2019/03/Posada-Gotan-Vivir-Mati.jpg",
@@ -112,7 +112,7 @@ export const matiDataGerman: ResumeData = {
   }
 };
 
-export const matiDataEnglish: ResumeData = {
+export const matiDataEnglish: Resume = {
   header: {
     title: "MATIAS SAMBRIZZI",
     picture: "https://www.posadagotan.com/wp-content/uploads/2019/03/Posada-Gotan-Vivir-Mati.jpg",
@@ -231,7 +231,7 @@ export const matiDataEnglish: ResumeData = {
   }
 }
 
-export const matiDataSpanish: ResumeData = {
+export const matiDataSpanish: Resume = {
   header: {
     title: "MATIAS SAMBRIZZI",
     picture: "https://www.posadagotan.com/wp-content/uploads/2019/03/Posada-Gotan-Vivir-Mati.jpg",
